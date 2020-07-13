@@ -1,0 +1,116 @@
+h4 { margin: 0 0 0 0; padding: 0; }
+p { margin: 0; padding: 0; }
+    .dropdown-list { max-width: 400px; }
+    .prouct-list { background: #e5e5e5;    display: flex;    justify-content: space-between;
+align-items: center;    padding: 15px 10px; }
+.prouct-list i{
+    width: 40px;
+    height: 40px;
+    display: block;
+}
+.product-container { padding: 15px 10px; position: relative; }
+.product-container .inner-category { padding-left: 40px; display: block; }
+label { margin: 0; padding: 0; }
+/* The container */
+.container {
+display: block;
+position: relative;
+padding-left: 35px;
+margin-bottom: 0;
+cursor: pointer;
+font-size: 22px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+position: absolute;
+opacity: 0;
+cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 25px;
+width: 25px;
+background-color: #eee;
+border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.container input:checked ~ .checkmark {
+background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+ top: 9px;
+left: 9px;
+width: 8px;
+height: 8px;
+border-radius: 50%;
+background: white;
+}
+
+.input-group{
+    position: absolute;
+    top: 25px;
+    right: 0;
+    display: flex;
+    align-items: center;
+}
+
+.input-group .product {
+	width: 30%;
+	margin: 30px;
+}
+.form-group {
+	width: 30%;
+	margin: 30px;
+}
+.glyphicon {
+    color: #95d7fc;;
+}
+
+.form-control { 
+    height:28px; 
+    text-align: center; 
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000; 
+    line-height: 28px;
+}
+
+.btn-default{ height: 30px;width: 30px; border: 1px solid #000000;}
+
+.form-control {width:40px;}
+
+.input-group-btn i{
+    width: 25px;
+    height: 25px;
+    display: block;
+    position: relative;
+    right: 5px;
+}

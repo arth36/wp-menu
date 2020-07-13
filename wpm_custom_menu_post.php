@@ -13,7 +13,7 @@ function wpm_register_menu_custom_post_type() {
 		'view_item'          => __('View Item', 'wp-menu'),
 		'search_items'       => __('Search Items', 'wp-menu'),
 		'not_found'          =>  __('No items found','wp-menu'),
-		'not_found_in_trash' => __('No tems found in Trash', 'wp-menu'),
+		'not_found_in_trash' => __('No items found in Trash', 'wp-menu'),
 		'parent_item_colon'  => __('', 'wp-menu'),
 		'menu_name'          => __('Items', 'wp-menu'),
 	);

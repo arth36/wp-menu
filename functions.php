@@ -9,9 +9,17 @@ $wpm_settings = get_option('wpm_settings');
 load_plugin_textdomain('wp-menu', false, dirname( plugin_basename(__FILE__) ) . '/languages/' );
 
 include(plugin_dir_path( dirname( __FILE__ ) ).'wp-menu/wpm_custom_metabox.php');
-include(plugin_dir_path( dirname( __FILE__ ) ).'wp-menu/wpm_veg_nonveg.php');
 include(plugin_dir_path( dirname( __FILE__ ) ).'wp-menu/wpm_custom_menu_post.php');
 include(plugin_dir_path( dirname( __FILE__ ) ).'wp-menu/wpm_item_custom_category.php');
+include(plugin_dir_path( dirname( __FILE__ ) ).'wp-menu/wpm_custom_tables_post.php');
+include(plugin_dir_path( dirname( __FILE__ ) ).'wp-menu/wpm_table_custom_category.php');
+include(plugin_dir_path( dirname( __FILE__ ) ).'wp-menu/wpm_table_metabox.php');
+
+function wpm_enqueue_styles(){
+    wp_enqueue_style( 'style', get_template_directory_uri() . '/style.css',false,'1.1','all');
+    wp_enqueue_script( 'main-js', get_template_directory_uri() . '/main.js', array('jquery') );
+}
+add_action('wp_enqueue_scripts', 'wpm_enqueue_styles');
 
 function wpm_custom_table(){ 
     
